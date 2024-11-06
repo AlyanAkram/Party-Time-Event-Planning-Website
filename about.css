@@ -1,0 +1,74 @@
+/* about.css */
+.about-us {
+  padding-top: 10%; /* Adds space below the header */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #cccccc; /* Light gray text for readability */
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6a5acd; /* Slate Blue for main heading */
+}
+
+.about-us h3,
+.about-us h4 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #6a5acd; /* Slate Blue for subheadings */
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cccccc; /* Light gray for text */
+  margin-bottom: 20px;
+}
+
+.about-us ul {
+  text-align: left; /* Aligns text to the left within lists */
+  margin: 20px auto;
+  padding-left: 20px;
+  list-style-type: disc; /* Adds bullet points to list items */
+}
+
+.about-us ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff; /* White text for contrast */
+  margin-bottom: 10px;
+}
+
+.about-us strong {
+  color: #6a5acd; /* Highlighted color for keywords */
+}
+
+.about-us h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff; /* White text for smaller headings */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding-top: 15%;
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .about-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-us h3,
+  .about-us h4 {
+    font-size: 1.3rem;
+  }
+
+  .about-us p,
+  .about-us ul li {
+    font-size: 1rem;
+  }
+}

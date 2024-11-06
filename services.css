@@ -1,0 +1,246 @@
+/* Notebook-style Navigation */
+.notebook-style {
+  background-color: #333333; /* Dark background to match the theme */
+  border: 2px dashed #6a5acd; /* Slate Blue border for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 800px; /* Limit the width of the container */
+  text-align: center; /* Center the text in the notebook style section */
+}
+
+.notebook-style h2 {
+  color: #ffffff; /* White text */
+  font-style: italic;
+}
+
+/* Services Overview Flexbox Adjustment */
+.services-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; /* Keeps elements spaced out vertically */
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+/* Service Item Styling */
+.service-item {
+  background-color: #444444;
+  padding: 20px;
+  border: 1px solid #555555;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%; /* Limit the width on smaller screens */
+  max-width: 600px;
+  margin-bottom: 20px; /* Add margin to ensure spacing between service items */
+  transition: transform 0.3s ease; /* For smooth hover effect */
+}
+
+.service-item a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 100%; /* Ensure the entire section is clickable */
+}
+
+/* Hover effect for Service Items */
+.service-item:hover {
+  transform: scale(1.05); /* Slightly scale the card on hover */
+}
+
+.service-item img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.service-item h3 {
+  color: #ffffff; /* White text */
+  font-size: 1.25em;
+  margin-bottom: 8px;
+}
+
+.service-item p {
+  color: #bbbbbb; /* Light grey for description */
+  font-size: 0.95em;
+}
+
+/* Responsiveness: For smaller screen sizes */
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%; /* Make service items take up the full width on small screens */
+    max-width: none; /* Remove max-width for responsiveness */
+  }
+
+  .services-overview {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Packages Section */
+.packages {
+  text-align: center;
+  padding: 50px;
+  background-color: #222222;
+}
+
+.package {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #ffffff;
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* Add scale transform for hover effect */
+.package:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Content and Image Styling */
+.package-content {
+  width: 60%; /* Define a consistent width for text content */
+}
+
+.package-image {
+  display: none; /* Hidden by default on smaller screens */
+  width: 35%;
+  padding-left: 20px;
+  max-height: 200px; /* Add a max height to keep it contained */
+}
+
+.package-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+}
+
+/* Show images only on larger screens */
+@media (min-width: 1024px) {
+  .package-image {
+    display: block;
+  }
+}
+
+/* Bronze Package */
+.bronze-package {
+  background-color: #cd7f32; /* Bronze color */
+}
+
+/* Silver Package */
+.silver-package {
+  background-color: #c0c0c0; /* Silver color */
+}
+
+/* Gold Package */
+.gold-package {
+  background-color: #ffd700; /* Gold color */
+}
+
+/* Custom Package Styling */
+.custom-package {
+  background-color: #6a5acd; /* Default Slate Blue */
+}
+
+.package h3 {
+  padding: 0 1% 0 1%;
+  text-align: center;
+}
+
+.package ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.package p {
+  margin-top: 10px;
+}
+/* For small screen, adjust package layout */
+@media (max-width: 768px) {
+  .package {
+    flex-direction: column; /* Stack the package content vertically */
+    align-items: center; /* Center align the content */
+    gap: 20px; /* Add gap between elements */
+  }
+
+  .package-image {
+    display: none; /* Hide image on smaller screens */
+  }
+
+  .service-item {
+    width: 100%; /* Ensure service items take up full width on smaller screens */
+    max-width: none; /* Remove max-width */
+  }
+}
+
+/* Show images only on larger screens */
+@media (min-width: 1024px) {
+  .package-image {
+    display: block;
+  }
+}
+
+/* Bronze Package */
+.bronze-package {
+  background-color: #cd7f32; /* Bronze color */
+}
+
+/* Silver Package */
+.silver-package {
+  background-color: #c0c0c0; /* Silver color */
+}
+
+/* Gold Package */
+.gold-package {
+  background-color: #ffd700; /* Gold color */
+}
+
+/* Custom Package Styling */
+.custom-package {
+  background-color: #6a5acd; /* Default Slate Blue */
+}
+
+.package h3 {
+  padding: 0 1% 0 1%;
+  text-align: center;
+}
+
+.package ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.package p {
+  margin-top: 10px;
+}
+
+/* Responsiveness: For smaller screen sizes */
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%; /* Make service items take up the full width on small screens */
+    max-width: none; /* Remove max-width for responsiveness */
+  }
+
+  .services-overview {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main {
+  margin-top: 10%;
+}

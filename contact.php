@@ -1,5 +1,10 @@
+<?php 
+include 'db.php';
+session_start(); // Start the session
+?>
 <?php include('header.php'); ?>
 <link rel="stylesheet" href="styles.css">  <!-- Global Styles -->
+<link rel="stylesheet" href="contact.css">  <!-- Global Styles -->
 <main>
     <section class="contact-form">
         <h2>Contact Us</h2>
