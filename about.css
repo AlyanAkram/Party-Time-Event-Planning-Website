@@ -1,26 +1,29 @@
-/* about.css */
+/* Global Styles */
+
+/* Section styling */
 .about-us {
-  padding-top: 10%; /* Adds space below the header */
-  max-width: 800px;
-  margin: 0 auto;
   text-align: center;
   color: #cccccc; /* Light gray text for readability */
+  max-width: 1200px; /* Restricting max-width for content */
+  margin: 0 auto; /* Centers the section on the screen */
+  padding: 0 20px; /* Adds horizontal padding for content */
 }
 
-.about-us h2 {
+.about-us h2,
+.about-us h3 {
   font-size: 2rem;
-  margin-bottom: 20px;
   color: #6a5acd; /* Slate Blue for main heading */
+  margin-bottom: 20px;
 }
 
-.about-us h3,
 .about-us h4 {
   font-size: 1.5rem;
-  margin-top: 30px;
-  color: #6a5acd; /* Slate Blue for subheadings */
+  color: #6a5acd;
+  margin-top: 20px;
 }
 
-.about-us p {
+.about-us p,
+.about-us ul {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #cccccc; /* Light gray for text */
@@ -28,15 +31,15 @@
 }
 
 .about-us ul {
-  text-align: left; /* Aligns text to the left within lists */
-  margin: 20px auto;
-  padding-left: 20px;
-  list-style-type: disc; /* Adds bullet points to list items */
+  text-align: center; /* Center-align the list items */
+  list-style-type: disc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px; /* Adds margin at the top for spacing */
 }
 
 .about-us ul li {
   font-size: 1rem;
-  line-height: 1.6;
   color: #ffffff; /* White text for contrast */
   margin-bottom: 10px;
 }
@@ -45,30 +48,139 @@
   color: #6a5acd; /* Highlighted color for keywords */
 }
 
-.about-us h4 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #ffffff; /* White text for smaller headings */
-  margin-top: 20px;
+/* Banner image and overlay styling */
+.about-banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px; /* Rounding the corners of the banner */
+  margin: 0 auto; /* Centers the banner container */
+  max-width: 100%; /* Full width for the container */
+  display: block; /* Ensures the container is a block element and fills its parent */
 }
 
+.about-image {
+  width: 100vw; /* Makes the image stretch to the full viewport width */
+  height: 100%; /* Keeps the image's aspect ratio intact while filling the width */
+  object-fit: cover; /* Ensures the image covers the entire area of its container */
+  margin-left: 0; /* Aligns image with the left side of the screen */
+  margin-right: 0; /* Aligns image with the right side of the screen */
+  padding: 0; /* Removes any padding */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 30px; /* Increased padding for better spacing */
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+  border-radius: 8px; /* Rounded corners for overlay */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adds a shadow for better visibility */
+}
+
+.text-overlay h2,
+.text-overlay h3 {
+  font-size: 2.5rem; /* Larger text for the title */
+  font-weight: bold; /* Bold text for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for text */
+}
+
+.text-overlay p {
+  font-size: 1.3rem; /* Larger text for the paragraph */
+  padding: 10px 0; /* Adds padding for readability */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Light shadow for readability */
+  font-weight: 300; /* Lighter weight for paragraph text */
+}
+
+/* Event Packages Section */
+.packages-section {
+  background-color: #f4f4f4; /* Light gray background for the packages section */
+  padding: 50px 20px; /* Adds padding for spacing around the section */
+  margin-top: 40px; /* Adds top margin to separate from the previous section */
+  border-radius: 8px; /* Rounded corners for the section */
+  text-align: center; /* Center-align all text within this section */
+}
+
+.packages-section h3 {
+  font-size: 2.2rem; /* Slightly larger font for the section title */
+  color: #6a5acd; /* Slate Blue for the title */
+  margin-bottom: 30px;
+  font-weight: bold; /* Bold title */
+}
+
+.package {
+  background-color: #ffffff; /* White background for each package */
+  padding: 20px;
+  margin-bottom: 30px; /* Spacing between each package */
+  border-radius: 8px; /* Rounded corners for each package */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  display: inline-block; /* Makes the package boxes sit next to each other */
+  width: 100%; /* Ensures each package takes full width on smaller screens */
+  max-width: 400px; /* Limits the maximum width of each package */
+}
+
+.package:hover {
+  transform: translateY(-5px); /* Lifts the package on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.package h4 {
+  font-size: 1.8rem; /* Larger font for package title */
+  color: #6a5acd; /* Slate Blue for package title */
+  margin-bottom: 15px; /* Space between title and list */
+}
+
+.package ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1.1rem; /* Larger font size for the list */
+}
+
+.package ul li {
+  color: #333333; /* Darker text for list items */
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.package p {
+  color: #6a5acd; /* Slate Blue for descriptive text */
+  font-weight: 500; /* Semi-bold for paragraph text */
+  margin-top: 15px; /* Space above the description text */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-us {
     padding-top: 15%;
     padding: 0 10px; /* Adjust padding for smaller screens */
   }
 
-  .about-us h2 {
-    font-size: 1.8rem;
+  .text-overlay h2 {
+    font-size: 2rem;
   }
 
-  .about-us h3,
-  .about-us h4 {
-    font-size: 1.3rem;
+  .text-overlay p {
+    font-size: 1.1rem;
   }
 
-  .about-us p,
-  .about-us ul li {
-    font-size: 1rem;
+  .about-image {
+    padding: 0; /* Removes padding on smaller screens */
+  }
+
+  .packages-section {
+    padding: 30px 10px; /* Reduced padding for smaller screens */
+  }
+
+  .package {
+    padding: 15px; /* Smaller padding inside the package on mobile */
+    max-width: 100%; /* Ensures full-width on small screens */
+  }
+
+  .package h4 {
+    font-size: 1.5rem; /* Adjust font size for mobile */
   }
 }
