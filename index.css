@@ -11,7 +11,7 @@ body {
   position: relative;
   width: 100%;
   height: 500px;
-  overflow: hidden;
+  overflow: hidden; /* Hide overflow */
 }
 
 .hero-image {
@@ -20,6 +20,11 @@ body {
   background-image: url("images/hero-image.jpg");
   background-size: cover;
   background-position: center;
+  transition: transform 0.5s;
+}
+
+.hero-banner:hover .hero-image {
+  transform: scale(1.15); /* Scale down slightly on hover */
 }
 
 .hero-overlay {
@@ -28,17 +33,116 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  transition: opacity 0.8s ease, background-color 0.8s ease; /* Smooth transition for overlay opacity and background color */
+}
+
+.hero-banner:hover .hero-overlay {
+  opacity: 1; /* Keep the overlay fully opaque on hover */
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
 }
 
 .hero-banner .slogan {
   font-size: 2.5em;
-  color: white;
-  z-index: 1;
-  text-align: center;
+  color: white; /* White text color for hero heading */
+  z-index: 1; /* Ensure the text is above the overlay */
+  text-align: center; /* Center the slogan text */
+  margin-bottom: 10px; /* Space below the slogan */
+}
+
+.hero-overlay p {
+  color: #ffffff; /* Text color for the paragraph */
+  margin: 10px 0; /* Margin for spacing */
+  font-size: 1.2em; /* Slightly larger text for readability */
+  max-width: 600px; /* Limit width for better layout */
+  text-align: center; /* Center the paragraph text */
+}
+
+.cta-button {
+  display: inline-block; /* Make it an inline block for padding */
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 20px; /* Padding for button */
+  background-color: #ffcc00; /* Button color */
+  color: #222222; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  text-align: center; /* Center the text within the button */
+}
+
+.cta-button:hover {
+  background-color: #e6b800; /* Darker button color on hover */
+}
+
+/* Hero Section Styles */
+.hero-banner2 {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden; /* Hide overflow */
+}
+
+.hero-image2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/hero-image2.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s;
+}
+
+.hero-banner2:hover .hero-image2 {
+  transform: scale(1.15); /* Scale down slightly on hover */
+}
+
+.hero-overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  transition: opacity 0.8s ease, background-color 0.8s ease; /* Smooth transition for overlay opacity and background color */
+}
+.hero-banner2:hover .hero-overlay2 {
+  opacity: 1; /* Keep the overlay fully opaque on hover */
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+}
+
+/* Optional: Add some spacing between heading and paragraph */
+.hero-overlay2 .slogan {
+  margin-bottom: 20px; /* Add space below the heading */
+}
+.hero-overlay2 p {
+  color: #ffffff; /* Text color for the paragraph */
+  margin: 10px 0; /* Margin for spacing */
+  font-size: 1.2em; /* Slightly larger text for readability */
+  max-width: 600px; /* Limit width for better layout */
+  text-align: center; /* Center the paragraph text */
+}
+.hero-overlay2 p,
+.hero-overlay2 h1,
+.hero-overlay2 h2 {
+  margin: 10px; /* Remove default margins */
+  color: #ffffff; /* Change text color as needed */
+}
+
+.hero-banner2:hover .hero-overlay2 {
+  opacity: 1; /* Keep the overlay fully opaque on hover */
+}
+
+.hero-banner2 .slogan {
+  font-size: 2.5em;
+  color: white; /* White text color for hero heading */
+  z-index: 1; /* Ensure the text is above the overlay */
 }
 
 /* Packages Section */
@@ -56,12 +160,17 @@ body {
   color: #ffffff;
   padding: 50px 20px;
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 50px auto;
   width: 90%;
   max-width: 800px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s;
+}
+
+/* Add scale transform for hover effect */
+.package:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
 }
 
 /* Content and Image Styling */
@@ -95,17 +204,9 @@ body {
   background-color: #cd7f32; /* Bronze color */
 }
 
-.bronze-package:hover {
-  background-color: #b87333; /* Darker bronze on hover */
-}
-
 /* Silver Package */
 .silver-package {
   background-color: #c0c0c0; /* Silver color */
-}
-
-.silver-package:hover {
-  background-color: #a9a9a9; /* Darker silver on hover */
 }
 
 /* Gold Package */
@@ -113,17 +214,9 @@ body {
   background-color: #ffd700; /* Gold color */
 }
 
-.gold-package:hover {
-  background-color: #daa520; /* Darker gold on hover */
-}
-
 /* Custom Package Styling */
 .custom-package {
   background-color: #6a5acd; /* Default Slate Blue */
-}
-
-.custom-package:hover {
-  background-color: #4169e1; /* Royal Blue Hover */
 }
 
 .package h3 {
@@ -172,14 +265,14 @@ body {
 
 .services-overview h2 {
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .service-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
 }
 
 .service-item {
@@ -190,6 +283,12 @@ body {
   text-align: center;
   color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+.service-item:hover {
+  transform: translateY(-5px); /* Lift the item slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
 }
 
 .service-item img {
@@ -207,5 +306,5 @@ body {
   padding-left: 20px;
   list-style-type: disc;
   text-align: left;
-  color: #bbbbbb;
+  color: #ffffff;
 }

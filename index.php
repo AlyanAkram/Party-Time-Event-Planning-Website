@@ -11,9 +11,16 @@ session_start(); // Start the session
 <div class="hero-banner">
     <div class="hero-image"></div> <!-- Div for background image -->
     <div class="hero-overlay"> <!-- Dark overlay -->
-        <a href="products.php" class='slogan'>Your ultimate solution for themed events and special celebrations.</a>
+        <a href="booking.php" class='slogan'>
+            Elevate Your Experience with Our Themed Events and Celebrations
+        </a>
+        <p>
+        Our expert team is dedicated to creating unforgettable moments tailored to your vision. From stunning weddings to vibrant corporate galas, we handle every detail to ensure a seamless event. Let us bring your dream occasion to life with our comprehensive event planning services!
+        </p>
+        <a href="booking.php" class='cta-button'>Start Planning Your Event Today</a>
     </div>
 </div>
+
 
 <main>
     <!-- Updated Packages Section -->
@@ -69,15 +76,22 @@ session_start(); // Start the session
         <h3>Custom Packages</h3>
         <p>Custom packages are available for specific parties, additional decorations, and additional staff. Please <a href="contact.php">contact us</a> to arrange any custom packages tailored to your needs.</p>
     </div>
+</main>
 </section>
+    <!-- Hero Section -->
+<div class="hero-banner2">
+    <a href="booking.php"> <!-- Make the entire banner clickable -->
+        <div class="hero-image2"></div> <!-- Div for background image -->
+        <div class="hero-overlay2"> <!-- Dark overlay -->
+            <h2 class='slogan'>Need More Information?</h2>
+            <p classname>Transform your vision into reality with our tailored event planning services. We specialize in crafting personalized experiences, ensuring every detail reflects your unique style. Let’s make your next event unforgettable!</p>
+            <p>Contact us to plan your perfect event.</p>
+        </div>
+    </a>
+</div>
 
 
-    <!-- Contact Banner -->
-    <section class="contact-banner">
-        <h2>Need More Information?</h2>
-        <p>Contact us to plan your perfect event.</p>
-        <a href="contact.php" class="btn">Get in Touch</a>
-    </section>
+<main>
 
     <!-- Services Overview Section -->
     <section class="services-overview">
@@ -85,30 +99,39 @@ session_start(); // Start the session
         <div class="service-list">
             <!-- Themed Events -->
             <div class="service-item">
+                <a href="booking.php"> <!-- Make the entire banner clickable -->
                 <img src="images/themed-events.jpg" alt="Themed Events">
                 <h3>Themed Events</h3>
                 <p>From elegant galas to whimsical celebrations, we bring your theme to life with style.</p>
+                </a>
             </div>
             <!-- Marquee Parties -->
             <div class="service-item">
+                <a href="booking.php"> <!-- Make the entire banner clickable -->    
                 <img src="images/marquee-parties.jpg" alt="Marquee Parties">
                 <h3>Marquee Parties</h3>
                 <p>Exclusive marquee setups for unforgettable outdoor experiences.</p>
+                </a>
             </div>
             <!-- Special Celebrations -->
             <div class="service-item">
+                <a href="booking.php"> <!-- Make the entire banner clickable -->
                 <img src="images/special-celebrations.jpg" alt="Special Celebrations">
                 <h3>Special Celebrations</h3>
                 <p>Mark your milestones with our tailored celebration services.</p>
+                </a>
             </div>
             <!-- Entertainment -->
             <div class="service-item">
+                <a href="booking.php"> <!-- Make the entire banner clickable -->
                 <img src="images/entertainment.jpg" alt="Entertainment">
                 <h3>Entertainment</h3>
                 <p>Top-notch entertainers, live bands, and DJs to keep your guests entertained.</p>
+                </a>
             </div>
             <!-- Other Services -->
             <div class="service-item">
+                <a href="booking.php"> <!-- Make the entire banner clickable -->
                 <img src="images/other-services.jpg" alt="Other Services">
                 <h3>Other Services</h3>
                 <ul>
@@ -118,6 +141,7 @@ session_start(); // Start the session
                     <li>Invitations and Printworks</li>
                     <li>Sound and Lighting</li>
                 </ul>
+                </a>
             </div>
         </div>
     </section>
