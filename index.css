@@ -1,0 +1,211 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Hero Section Styles */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner .slogan {
+  font-size: 2.5em;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+/* Packages Section */
+.packages {
+  text-align: center;
+  padding: 50px;
+  background-color: #222222;
+}
+
+.package {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #ffffff;
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Content and Image Styling */
+.package-content {
+  width: 60%; /* Define a consistent width for text content */
+}
+
+.package-image {
+  display: none; /* Hidden by default on smaller screens */
+  width: 35%;
+  padding-left: 20px;
+  max-height: 200px; /* Add a max height to keep it contained */
+}
+
+.package-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+}
+
+/* Show images only on larger screens */
+@media (min-width: 1024px) {
+  .package-image {
+    display: block;
+  }
+}
+
+/* Bronze Package */
+.bronze-package {
+  background-color: #cd7f32; /* Bronze color */
+}
+
+.bronze-package:hover {
+  background-color: #b87333; /* Darker bronze on hover */
+}
+
+/* Silver Package */
+.silver-package {
+  background-color: #c0c0c0; /* Silver color */
+}
+
+.silver-package:hover {
+  background-color: #a9a9a9; /* Darker silver on hover */
+}
+
+/* Gold Package */
+.gold-package {
+  background-color: #ffd700; /* Gold color */
+}
+
+.gold-package:hover {
+  background-color: #daa520; /* Darker gold on hover */
+}
+
+/* Custom Package Styling */
+.custom-package {
+  background-color: #6a5acd; /* Default Slate Blue */
+}
+
+.custom-package:hover {
+  background-color: #4169e1; /* Royal Blue Hover */
+}
+
+.package h3 {
+  padding: 0 1% 0 1%;
+  text-align: center;
+}
+
+.package ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.package p {
+  margin-top: 10px;
+}
+
+/* Contact Banner */
+.contact-banner {
+  text-align: center;
+  padding: 40px;
+  background-color: #333333;
+}
+
+.contact-banner h2,
+.contact-banner p {
+  color: #ffffff;
+}
+
+.contact-banner .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #222222;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Services Overview */
+.services-overview {
+  text-align: center;
+  padding: 50px;
+  background-color: #222222;
+}
+
+.services-overview h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  background-color: #333333;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service-item ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  text-align: left;
+  color: #bbbbbb;
+}

@@ -1,0 +1,49 @@
+/* booking.css */
+.booking-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #1a1a1a; /* Dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.booking-form h2 {
+  text-align: center;
+  color: #ffffff; /* White text */
+}
+
+.booking-form label {
+  margin: 10px 0;
+  display: block;
+  color: #cccccc; /* Light Gray */
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form textarea,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #333333; /* Darker input background */
+  color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 5px;
+}
+
+.booking-form input[type="submit"] {
+  background-color: #6a5acd; /* Slate Blue */
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.booking-form input[type="submit"]:hover {
+  background-color: #4169e1; /* Royal Blue Hover */
+}
