@@ -308,3 +308,72 @@ body {
   text-align: left;
   color: #ffffff;
 }
+/* Testimonial Section */
+.testimonials {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #ffffff;
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background-color: #333333; /* Card background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Card shadow */
+  border: 1px solid #444444; /* Subtle border */
+  border-radius: 15px; /* Rounded corners for the card */
+}
+
+.testimonial-item {
+  display: none;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-item.active {
+  display: block;
+}
+
+.testimonial-item p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.testimonial-item h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #6a5acd;
+}
+
+button.prev {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  left: 0;
+}
+
+button.next {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  right: 0;
+}
