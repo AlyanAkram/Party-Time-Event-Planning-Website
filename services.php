@@ -21,58 +21,79 @@ session_start(); // Start the session
         </div>
     </section>
 
-    <!-- Services Overview Section -->
-    <section class="services-overview">
-        <h2>Offered Services</h2>
-    
-    <!-- Standalone Service Sections -->
-    <section id="themed-events" class="service-item">
-        <a href="booking.php"> 
+   <!-- Services Overview Section -->
+<section class="services-overview">
+    <h2 class="services-heading">Offered Services</h2> <!-- Moved outside of the flex container -->
+
+    <!-- Flex container for service items only -->
+    <div class="service-items">
+        <!-- Themed Events Section -->
+        <section id="themed-events" class="service-item" onclick="location.href='booking.php?package=themed_events'">
             <img src="images/themed-events.jpg" alt="Themed Events">
             <h3>Themed Events</h3>
-            <p>From elegant galas to whimsical celebrations, we bring your theme to life with style.</p>
-        </a>
-    </section>
-    
-    <section id="marquee-parties" class="service-item">
-        <a href="booking.php">    
+            <p>From elegant galas to whimsical celebrations, we bring your theme to life with style. Our team works closely with you to develop a custom concept that reflects your vision and personality. Choose from popular themes or let us create a unique concept tailored specifically for your event.</p>
+            <ul>
+                <li>Personalized decorations, props, and settings</li>
+                <li>Custom invitation and print design</li>
+                <li>Comprehensive theme consultation and planning</li>
+                <li>On-site setup and theme coordination</li>
+            </ul>
+        </section>
+
+        <!-- Marquee Parties Section -->
+        <section id="marquee-parties" class="service-item" onclick="location.href='booking.php?package=marquee_parties'">  
             <img src="images/marquee-parties.jpg" alt="Marquee Parties">
             <h3>Marquee Parties</h3>
-            <p>Exclusive marquee setups for unforgettable outdoor experiences.</p>
-        </a>
-    </section>
-    
-    <section id="special-celebrations" class="service-item">
-        <a href="booking.php"> 
+            <p>Our exclusive marquee setups provide an unforgettable outdoor experience. Ideal for weddings, garden parties, and corporate events, our marquees can be customized with different styles and configurations to suit your preferences.</p>
+            <ul>
+                <li>Flexible marquee sizes and configurations</li>
+                <li>Elegant lighting and decor options</li>
+                <li>Climate control options (fans or heaters)</li>
+                <li>Seating arrangements and dance floors available</li>
+            </ul>
+        </section>
+
+        <!-- Special Celebrations Section -->
+        <section id="special-celebrations" class="service-item" onclick="location.href='booking.php?package=special_celebrations'"> 
             <img src="images/special-celebrations.jpg" alt="Special Celebrations">
             <h3>Special Celebrations</h3>
-            <p>Mark your milestones with our tailored celebration services.</p>
-        </a>
-    </section>
-    
-    <section id="entertainment" class="service-item">
-        <a href="booking.php"> 
+            <p>Celebrate life’s biggest moments with our special celebrations package. Perfect for birthdays, anniversaries, or any milestone, we make sure your event is as memorable as possible with tailored services and dedicated planning.</p>
+            <ul>
+                <li>Custom cake and dessert options</li>
+                <li>Special decor tailored to your occasion</li>
+                <li>Professional photography and videography services</li>
+                <li>Unique entertainment options for all ages</li>
+            </ul>
+        </section>
+
+        <!-- Entertainment Section -->
+        <section id="entertainment" class="service-item" onclick="location.href='booking.php?package=entertainment'"> 
             <img src="images/entertainment.jpg" alt="Entertainment">
             <h3>Entertainment</h3>
-            <p>Top-notch entertainers, live bands, and DJs to keep your guests entertained.</p>
-        </a>
-    </section>
-    
-    <section id="other-services" class="service-item">
-        <a href="booking.php"> 
+            <p>Keep your guests engaged and entertained with top-notch performers, musicians, and DJs. Our entertainment options cater to various event types and themes, ensuring your guests enjoy every moment.</p>
+            <ul>
+                <li>Live music bands and solo performances</li>
+                <li>Professional DJs and sound setup</li>
+                <li>Interactive activities and games</li>
+                <li>Children’s entertainment options</li>
+            </ul>
+        </section>
+
+        <!-- Other Services Section -->
+        <section id="other-services" class="service-item" onclick="location.href='booking.php?package=other_services'">
             <img src="images/other-services.jpg" alt="Other Services">
             <h3>Other Services</h3>
             <ul>
-                <li>Fundraisers</li>
-                <li>Bespoke Catering</li>
-                <li>Themes and Props</li>
-                <li>Invitations and Printworks</li>
-                <li>Sound and Lighting</li>
+                <li>Fundraisers: Full service planning and coordination</li>
+                <li>Bespoke Catering: Custom menu design with dietary options</li>
+                <li>Themes and Props: Exclusive access to a variety of props</li>
+                <li>Invitations and Printworks: High-quality, themed print materials</li>
+                <li>Sound and Lighting: State-of-the-art audio and visual equipment</li>
             </ul>
-        </a>
-    </section>
+            <p>Our additional services cover everything you need to elevate your event, from catering to technical support, ensuring a seamless and enjoyable experience for your guests.</p>
+        </section>
+    </div>
 </section>
-
 
     <!-- Packages Section -->
     <section class="packages">

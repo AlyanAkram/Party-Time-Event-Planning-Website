@@ -28,40 +28,36 @@ session_start(); // Start the session
         <h2>Our Services</h2>
         <div class="service-list">
             <!-- Themed Events -->
-            <div class="service-item">
-                <a href="booking.php"> <!-- Make the entire banner clickable -->
+            <div class="service-item" onclick="location.href='booking.php?package=themed_events'"> <!-- Make the entire banner clickable -->
                 <img src="images/themed-events.jpg" alt="Themed Events">
                 <h3>Themed Events</h3>
                 <p>From elegant galas to whimsical celebrations, we bring your theme to life with style.</p>
-                </a>
             </div>
+
             <!-- Marquee Parties -->
-            <div class="service-item">
-                <a href="booking.php"> <!-- Make the entire banner clickable -->    
+            <div class="service-item" onclick="location.href='booking.php?package=marquee_parties'"> <!-- Make the entire banner clickable -->    
                 <img src="images/marquee-parties.jpg" alt="Marquee Parties">
                 <h3>Marquee Parties</h3>
                 <p>Exclusive marquee setups for unforgettable outdoor experiences.</p>
-                </a>
             </div>
+
             <!-- Special Celebrations -->
-            <div class="service-item">
-                <a href="booking.php"> <!-- Make the entire banner clickable -->
+            <div class="service-item" onclick="location.href='booking.php?package=special_celebrations'"> <!-- Make the entire banner clickable -->
                 <img src="images/special-celebrations.jpg" alt="Special Celebrations">
                 <h3>Special Celebrations</h3>
                 <p>Mark your milestones with our tailored celebration services.</p>
-                </a>
             </div>
+
             <!-- Entertainment -->
-            <div class="service-item">
-                <a href="booking.php"> <!-- Make the entire banner clickable -->
+            <div class="service-item" onclick="location.href='booking.php?package=entertainment'">
+                <!-- Make the entire banner clickable -->
                 <img src="images/entertainment.jpg" alt="Entertainment">
                 <h3>Entertainment</h3>
                 <p>Top-notch entertainers, live bands, and DJs to keep your guests entertained.</p>
-                </a>
             </div>
             <!-- Other Services -->
-            <div class="service-item">
-                <a href="booking.php"> <!-- Make the entire banner clickable -->
+            <div class="service-item" onclick="location.href='booking.php?package=other_services'">
+                <!-- Make the entire banner clickable -->
                 <img src="images/other-services.jpg" alt="Other Services">
                 <h3>Other Services</h3>
                 <ul>
@@ -71,7 +67,6 @@ session_start(); // Start the session
                     <li>Invitations and Printworks</li>
                     <li>Sound and Lighting</li>
                 </ul>
-                </a>
             </div>
         </div>
     
