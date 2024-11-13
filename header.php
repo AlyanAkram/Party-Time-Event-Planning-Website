@@ -36,11 +36,19 @@
                 <?php endif; ?>
             </div>
         </div>
+
+        <!-- Display username on the right side -->
+        <?php if (isset($_SESSION['username'])): ?>
+            <div class="username-display">
+                <span>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</span>
+            </div>
+        <?php endif; ?>
     </nav>
 
     <!-- Hamburger button -->
     <button class="hamburger" onclick="toggleNav()">☰</button>
 </header>
+
 
 <script>
 function toggleNav() {
