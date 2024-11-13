@@ -76,3 +76,44 @@ main {
   display: block;
   color: #cccccc; /* Light Gray */
 }
+/* Styling for the bookings table */
+.my-bookings table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.my-bookings th,
+.my-bookings td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #444444;
+}
+
+.my-bookings th {
+  background-color: #6a5acd; /* Slate Blue */
+  color: #ffffff;
+}
+
+.my-bookings tr:nth-child(even) {
+  background-color: #333333; /* Dark background for even rows */
+}
+
+.my-bookings tr:nth-child(odd) {
+  background-color: #222222; /* Darker background for odd rows */
+}
+
+.my-bookings td a {
+  color: #ff6347; /* Tomato Red for cancel links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.my-bookings td a:hover {
+  color: #e60000; /* Darker red on hover */
+}
+
+.my-bookings p {
+  text-align: center;
+  color: #cccccc; /* Light Gray */
+}

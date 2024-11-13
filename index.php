@@ -73,51 +73,55 @@ session_start(); // Start the session
 </div>
 
 <main>
-    <section class="packages">
-        <h2>Our Packages</h2>
-        <div class="package bronze-package" onclick="location.href='booking.php?package=bronze'">
-            <h3>Bronze Package</h3>
-            <ul>
-                <li>Room decorations – balloons, banners</li>
-                <li>Table decorations – centerpieces, gifts</li>
-                <li>DJ entertainment</li>
-                <li>Cold buffet</li>
-            </ul>
-            <div class="package-image">
-                <img src="images/bronze-package.jpg" alt="Bronze Package Image">
-            </div>
+<section class="packages">
+    <h2>Our Packages</h2>
+    <div class="package bronze-package" onclick="location.href='booking.php?package=bronze'">
+        <h3>Bronze Package</h3>
+        <p><strong>Price:</strong> 50,000 PKR</p>
+        <ul>
+            <li>Room decorations – balloons, banners</li>
+            <li>Table decorations – centerpieces, gifts</li>
+            <li>DJ entertainment</li>
+            <li>Cold buffet</li>
+        </ul>
+        <div class="package-image">
+            <img src="images/bronze-package.jpg" alt="Bronze Package Image">
         </div>
-        <div class="package silver-package" onclick="location.href='booking.php?package=silver'">
-            <h3>Silver Package</h3>
-            <p><strong>Includes all from Bronze package plus:</strong></p>
-            <ul>
-                <li>Invitation design and handling</li>
-                <li>Party cost clear up</li>
-                <li>Live band entertainment</li>
-                <li>Cold buffet and soft drinks</li>
-            </ul>
-            <div class="package-image">
-                <img src="images/silver-package.jpg" alt="Silver Package Image">
-            </div>
+    </div>
+    <div class="package silver-package" onclick="location.href='booking.php?package=silver'">
+        <h3>Silver Package</h3>
+        <p><strong>Price:</strong> 70,000 PKR</p>
+        <p><strong>Includes all from Bronze package plus:</strong></p>
+        <ul>
+            <li>Invitation design and handling</li>
+            <li>Party cost clear up</li>
+            <li>Live band entertainment</li>
+            <li>Cold buffet and soft drinks</li>
+        </ul>
+        <div class="package-image">
+            <img src="images/silver-package.jpg" alt="Silver Package Image">
         </div>
-        <div class="package gold-package" onclick="location.href='booking.php?package=gold'">
-            <h3>Gold Package</h3>
-            <p><strong>Includes all from Silver package plus:</strong></p>
-            <ul>
-                <li>Staff in attendance to ensure complete perfection</li>
-                <li>Finding guest accommodation, booking transport</li>
-                <li>Live band entertainment and magician</li>
-                <li>Hot and cold buffet and soft drinks</li>
-            </ul>
-            <div class="package-image">
-                <img src="images/gold-package.jpg" alt="Gold Package Image">
-            </div>
+    </div>
+    <div class="package gold-package" onclick="location.href='booking.php?package=gold'">
+        <h3>Gold Package</h3>
+        <p><strong>Price:</strong> 100,000 PKR</p>
+        <p><strong>Includes all from Silver package plus:</strong></p>
+        <ul>
+            <li>Staff in attendance to ensure complete perfection</li>
+            <li>Finding guest accommodation, booking transport</li>
+            <li>Live band entertainment and magician</li>
+            <li>Hot and cold buffet and soft drinks</li>
+        </ul>
+        <div class="package-image">
+            <img src="images/gold-package.jpg" alt="Gold Package Image">
         </div>
-        <div class="package custom-package" onclick="location.href='contact.php'">
-            <h3>Custom Packages</h3>
-            <p>Custom packages are available for specific parties, additional decorations, and additional staff. Please <a href="contact.php">contact us</a> to arrange any custom packages tailored to your needs.</p>
-        </div>
-    </section>
+    </div>
+    <div class="package custom-package" onclick="location.href='contact.php'">
+        <h3>Custom Packages</h3>
+        <p>Custom packages are available for specific parties, additional decorations, and additional staff. Please <a href="contact.php">contact us</a> to arrange any custom packages tailored to your needs.</p>
+    </div>
+</section>
+
 
     <!-- Testimonial Section -->
     <section class="testimonials">

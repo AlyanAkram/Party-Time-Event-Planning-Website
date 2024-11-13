@@ -1,7 +1,7 @@
 /* New style for username display */
 .username-display {
   margin-left: auto; /* Pushes it to the right */
-  color: #ffffff;
+  color: #6a5acd;
   font-weight: bold;
   padding: 10px;
   white-space: nowrap; /* Prevents wrapping */

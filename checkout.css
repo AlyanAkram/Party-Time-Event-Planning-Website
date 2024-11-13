@@ -1,0 +1,107 @@
+/* General Layout */
+main {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  min-height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
+.checkout-form {
+  background-color: #333333; /* Dark background for the card */
+  max-width: 800px; /* Limit the width */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for the card */
+  width: 100%; /* Full width of its container */
+}
+
+/* Title Styling */
+h1 {
+  color: #ffffff; /* White text */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Checkout Form Container */
+.checkout-form {
+  background-color: #444444; /* Darker background inside the card */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.checkout-form h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Package Details Section */
+.order-summary {
+  background-color: #555555;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.order-summary p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #cccccc; /* Light Gray text */
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #cccccc; /* Light Gray text */
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 5px;
+}
+
+.checkout-btn {
+  background-color: #6a5acd; /* Slate Blue */
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+
+.checkout-btn:hover {
+  background-color: #4169e1; /* Royal Blue Hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .checkout-form {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}

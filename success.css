@@ -1,0 +1,75 @@
+/* success.css */
+
+/* General Success Page Styles */
+.success-page {
+  font-family: "Arial", sans-serif;
+
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  height: 100vh; /* Full height of the viewport */
+  text-align: center; /* Centers text inside elements */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.success-message {
+  background-color: #444444; /* Dark background for the success box */
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensures it fills the container */
+  max-width: 600px; /* Limits the width for large screens */
+}
+
+.success-message h1 {
+  color: #6a5acd; /* Slate Blue */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.success-message p {
+  font-size: 1.2rem;
+  color: #fff; /* Light Gray text */
+  margin-bottom: 15px;
+}
+
+.confirmation-details {
+  background-color: #555555; /* Darker background for the details section */
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.confirmation-details p {
+  font-size: 1.1rem;
+  color: #fff; /* Light Gray text */
+}
+
+.confirmation-details strong {
+  font-weight: bold;
+  color: #ffffff; /* White text for strong elements */
+}
+
+.success-message p:last-child {
+  font-size: 1rem;
+  color: #fff; /* Medium Gray text */
+}
+
+.success-message a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.success-message a:hover {
+  background-color: #007bff;
+  color: #fff;
+  transition: 0.3s;
+}
