@@ -60,3 +60,19 @@
 main {
   margin-top: 10%;
 }
+.booking-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #333333; /* Darker background for selects */
+  color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-form label {
+  margin: 15px 0 5px; /* Adjust spacing for labels */
+  display: block;
+  color: #cccccc; /* Light Gray */
+}

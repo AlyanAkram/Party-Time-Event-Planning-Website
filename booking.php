@@ -69,16 +69,21 @@ if (isset($_POST['book'])) {
         ?>
 
 <form action="booking.php" method="post">
-    <label for="package">Select Package:</label>
-    <select name="package" id="package" required>
-        <option value="bronze" <?php if ($selectedPackage === 'bronze') echo 'selected'; ?>>Bronze Package</option>
-        <option value="silver" <?php if ($selectedPackage === 'silver') echo 'selected'; ?>>Silver Package</option>
-        <option value="gold" <?php if ($selectedPackage === 'gold') echo 'selected'; ?>>Gold Package</option>
+
+    <label for="service">Select Service:</label>
+    <select name="service" id="service" required>
         <option value="themed_events" <?php if ($selectedPackage === 'themed_events') echo 'selected'; ?>>Themed Events</option>
         <option value="marquee_parties" <?php if ($selectedPackage === 'marquee_parties') echo 'selected'; ?>>Marquee Parties</option>
         <option value="special_celebrations" <?php if ($selectedPackage === 'special_celebrations') echo 'selected'; ?>>Special Celebrations</option>
         <option value="entertainment" <?php if ($selectedPackage === 'entertainment') echo 'selected'; ?>>Entertainment</option>
         <option value="other_services" <?php if ($selectedPackage === 'other_services') echo 'selected'; ?>>Other Services</option>
+    </select>
+
+    <label for="package">Select Package:</label>
+    <select name="package" id="package" required>
+        <option value="bronze" <?php if ($selectedPackage === 'bronze') echo 'selected'; ?>>Bronze Package</option>
+        <option value="silver" <?php if ($selectedPackage === 'silver') echo 'selected'; ?>>Silver Package</option>
+        <option value="gold" <?php if ($selectedPackage === 'gold') echo 'selected'; ?>>Gold Package</option>
     </select>
 
     <label for="event_date">Event Date:</label>
@@ -99,6 +104,7 @@ if (isset($_POST['book'])) {
 
     <input type="submit" name="book" value="Submit Booking">
 </form>
+
 
     </section>
 </main>
