@@ -16,17 +16,23 @@
   z-index: 1000;
 }
 
+.header .logo {
+  max-width: 60px;
+  margin-right: 15px;
+}
+
 .nav-container {
   display: flex;
+  justify-content: center; /* Centers the nav */
   width: 100%;
-  justify-content: center;
-  position: relative;
 }
 
 .nav {
   display: flex;
   justify-content: center;
   flex-grow: 1;
+  width: 100%;
+  position: relative;
 }
 
 .nav-link {
@@ -44,26 +50,33 @@
 
 .auth-links {
   display: flex;
-  position: absolute;
-  right: 0;
+  justify-content: flex-end;
 }
 
 .hamburger {
   display: none;
 }
 
-@media (max-width: 768px) {
+.nav-links {
+  display: flex;
+  justify-content: flex-start; /* Align the links to the left */
+  gap: 10px;
+}
+
+@media (max-width: 680px) {
   .nav {
-    display: none;
-    flex-direction: column;
-    background-color: #333333; /* Darker background */
+    display: flex;
     width: 100%;
   }
 
-  .nav.active {
-    display: flex;
+  /* Adjust Home and Services to be together on the left */
+  .nav-home,
+  .nav-services {
+    display: inline-block;
+    margin-right: 10px;
   }
 
+  /* Move the Hamburger Menu to the right */
   .hamburger {
     display: block;
     font-size: 1.5em;
@@ -71,5 +84,72 @@
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333333; /* Darker background */
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Home and Services are outside of the hamburger menu */
+  .nav-home,
+  .nav-services {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .nav-about,
+  .nav-contact,
+  .nav-bookings,
+  .nav-login,
+  .nav-signup,
+  .nav-logout {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #333333;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Keep Home outside the hamburger menu */
+  .nav-home {
+    display: block;
+  }
+
+  /* Hide all other links inside the hamburger menu */
+  .nav-about,
+  .nav-contact,
+  .nav-services,
+  .nav-bookings,
+  .nav-login,
+  .nav-signup,
+  .nav-logout {
+    display: block;
+    padding: 10px 0;
   }
 }

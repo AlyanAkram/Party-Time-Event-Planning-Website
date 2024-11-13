@@ -15,12 +15,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signup'])) {
     $stmt->bind_param("sss", $username, $email, $password); // "sss" specifies the types of the variables
 
     if ($stmt->execute()) {
-        // Set session variables to log in the user automatically
-        $_SESSION['user_id'] = $stmt->insert_id; // Get the last inserted user ID
+        // Start session for successful signup and set up alert and delay
+        $_SESSION['user_id'] = $stmt->insert_id;
         $_SESSION['username'] = $username;
-
-        // Redirect to index.php after successful signup
-        header("Location: index.php");
+    
+        // Use JavaScript to show an alert and redirect after a delay
+        echo "<script>
+            alert('Signed Up Successfully');
+            window.location.href = 'login.php';
+        </script>";
         exit;
     } else {
         // Error message
@@ -29,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['signup'])) {
     $stmt->close();
 }
 ?>
+<?php include('header.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
